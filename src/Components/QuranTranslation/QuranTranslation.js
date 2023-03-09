@@ -13,7 +13,7 @@ function QuranTranslation() {
   let [englishName, setEnglishName] = useState("");
 
   useEffect(() => {
-    axios.get(`http://api.alquran.cloud/v1/meta`).then((res) => {
+    axios.get(`https://api.alquran.cloud/v1/meta`).then((res) => {
       let souras = res.data.data.surahs.references;
       setSouras(souras);
       setFilteredSouras(souras);
